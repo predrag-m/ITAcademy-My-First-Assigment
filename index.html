@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First Assigment</title>
+    <style>
+        i { font-weight: bold }
+        b { color: rgb(4, 0, 255) }
+        #span1 { color: red }
+    </style>
+</head>
+
+<body>
+    <h3>Pozdrav!</h3>
+    
+    <p>Zovem se <i>Markovljev Predrag</i> i polaznik sam programa <span id="span1">FrontEnd JavaScript Development</span> na <strong>ITAcademy</strong>.</p>
+    <p>Volim kodiranje i programiranje. Mogućnost da od <u>praznog</u> tekst editora dobijem određenu web aplikaciju mi se čini veoma <mark>zanimljivom.</mark> Takođe, činjenica da svakog dana saznajem nešto novo daje mi novu količinu <b>entuzijazma</b> koji mi je potreban kako bih savladao i ono manje interesantno gradivo.</p>
+    <p>Današnji datum: <span id="date-time"></span></p>
+    
+    <script>
+        var d = new Date();
+        document.getElementById("date-time").innerHTML = d.getDate() + "/" + (d.getMonth() + 1) + "/" + d.getFullYear();
+    </script>
+</body>
+
+</html>
